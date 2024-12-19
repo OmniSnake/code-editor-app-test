@@ -1,27 +1,35 @@
-# CodeEditorAppTest
+# Code Editor App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+Простое приложение онлайн-редактора кода с подсветкой синтаксиса на Monaco Editor
+Версия Angular: ^18
 
-## Development server
+Пользователю доступно:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Написание кода на одном из двух языков (JavaScript или Python).
+- Переключаться между языками.
+- Запускать написанный код.
+- Просматривать результат выполнения или ошибки.
 
-## Code scaffolding
+## Установка и запуск
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. **Клонировать репозиторий:**
+   ```bash
+   git clone <URL репозитория>
+   cd <папка проекта>
 
-## Build
+ 2. **Запуск**
+   npm install
+   npm start
+   После запуска приложение будет доступно по адресу: http://localhost:4200
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Ограничения
+	•	Поддерживаются только два языка: JavaScript и Python.
+	•	Перезагрузка страницы сбросит состояние редактора (нет сохранения кода).
+	•	Нет реального выполнения кода — результат всегда определяется локальной логикой.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+# Варианты расширения
+	•	Добавить больше языков.
+	•	Реализовать реальный сервер для выполнения кода.
+	•	Добавить сохранение состояния в локальное хранилище или на сервер.
+	•	Улучшить интерфейс, добавить темы оформления.
+	•	Реализовать тестирование кода по набору тест-кейсов.

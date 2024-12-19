@@ -17,6 +17,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "loader": {
+              ".ttf": "binary"
+            },
             "outputPath": "dist/code-editor-app-test",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -33,7 +36,7 @@
               {
                 "glob": "**/*",
                 "input": "node_modules/monaco-editor/min/vs",
-                "output": "vs"
+                "output": "/vs"
               }
             ],
             "styles": [
